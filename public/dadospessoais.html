@@ -22,27 +22,39 @@
 		<section class="form">
 			<div class="login">
 				<div class="text wrapper">
-					<h2>Login</h2>
-					<p>Faça login ou cadastre-se colocando seu email.</p>
+					<h2>Dados Pessoais</h2>
+					<p>Insira seu CPF e Matrícula.</p>
 				</div>
 				<div class="input wrapper">
 					<input
-						type="email"
-						name="email"
-						id="cadastro-email"
-						aria-label="campo de texto de email"
-						placeholder="seuemail@fortaleza.ce.gov.br"
+						type="number"
+						name="cpf"
+						id="cadastro-cpf"
+						aria-label="campo de texto de cpf"
+						placeholder="CPF"
+					/>
+					<input
+						type="number"
+						name="matricula"
+						id="cadastro-matricula"
+						aria-label="campo de texto de matrícula"
+						placeholder="Matrícula"
 					/>
 				</div>
-				<!-- <button type="submit">login / cadastrar</button> -->
 
-				<a class="primary-button" href="cadastrar.html"> login / cadastrar </a>
+				<!-- <button type="submit">continuar</button> -->
+				<a class="primary-button" href="contato.html">continuar</a>
 			</div>
-			<button class="primary-button" type="submit">entrar com o google</button>
 		</section>
 
-		<pre id="object"></pre>
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
+		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+		<pre id="object"></pre>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>

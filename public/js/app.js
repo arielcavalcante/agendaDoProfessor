@@ -12,14 +12,21 @@
 	};
 	// Initialize Firebase
 	firebase.initializeApp(firebaseConfig);
-	// firebase.analytics();
 
 	// Get elements
 	const preObject = document.getElementById('object');
 
 	// Create references
-	const dbRefObject = firebase.database().ref().child('object');
+	const dbRefObject = firebase.database().ref().child('aluno');
 
 	//Sync obj changes
-	dbRefObject.on('value', snap => console.log(snap.val()));
+
+	// Create server
+	// const createServer = require('http');
+
+	// // Initialize access to realtime db
+	// let server = createServer((req, res) => {
+	// 	let ref = firebase.database().ref();
+	// 	let html = '';
+	// });
 })();
