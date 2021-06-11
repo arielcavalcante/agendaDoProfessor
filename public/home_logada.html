@@ -1,24 +1,199 @@
 <!DOCTYPE html>
 <html lang="pt">
 	<head>
+		<script
+			src="https://kit.fontawesome.com/a9f8571140.js"
+			crossorigin="anonymous"
+		></script>
 		<meta charset="UTF-8" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Agenda do Professor</title>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/internal.css" />
+		<link rel="stylesheet" href="css/menu.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
 			rel="stylesheet"
 		/>
+		<link
+			rel="stylesheet"
+			href="path/to/font-awesome/css/font-awesome.min.css"
+		/>
 	</head>
 	<body>
 		<header>
-			<h3>
+			<h1>
 				<a href="/home_logada.html"> Canal do <strong>Professor</strong></a>
-			</h3>
-		</header>
+			</h1>
 
+			<div class="menu-button">
+				<i class="fas fa-bars"></i>
+			</div>
+
+			<nav style="display: none">
+				<div class="menu-close">
+					<i class="fas fa-times"></i>
+				</div>
+				<!-- Use uma tag h3 pra título de menu -->
+				<ul id="menu-items">
+					<li><h3>Menu</h3></li>
+					<li>
+						<a href="#"
+							><i class="fas fa-sticky-note fa-fw"></i>Notas de Aula</a
+						>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-file-alt fa-fw"></i>Plano de Aula</a>
+					</li>
+					<li>
+						<a href="#"
+							><i class="fas fa-book-open fa-fw"></i>Diário de Classe</a
+						>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-calendar fa-fw"></i>Calendário</a>
+					</li>
+					<li>
+						<a href="#"
+							><i class="fas fa-graduation-cap fa-fw"></i>Lançar Notas</a
+						>
+					</li>
+					<li>
+						<a href="#"><i class="fas fa-tasks fa-fw"></i>Frequência Mensal</a>
+					</li>
+				</ul>
+			</nav>
+		</header>
+		<main>
+			<section class="content-header">
+				<h2>Resumo</h2>
+				<p class="subtitle hora">segunda, 7 jun, 9:19</p>
+			</section>
+			<section class="listas turmas">
+				<h3>Turmas</h3>
+				<div>
+					<section class="turno manha">
+						<h4>Manhã</h4>
+						<ul>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+					<section class="turno tarde">
+						<h4>Tarde</h4>
+						<ul>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+							<li class="turma">
+								<ul>
+									<li>
+										<span class="serie">1</span>º ano
+										<span class="turma">A</span>
+									</li>
+									<li><span class="colegio">EEFM Adauto Leite</span></li>
+								</ul>
+							</li>
+						</ul>
+					</section>
+				</div>
+			</section>
+		</main>
+
+		<footer>
+			<nav>
+				<ul>
+					<li class="bottom-menu button">
+						<i class="fas fa-cog"></i>
+						<span>ajustes</span>
+					</li>
+					<li class="bottom-menu button">
+						<i class="fas fa-calendar"></i> <span>agenda</span>
+					</li>
+					<li class="bottom-menu button">
+						<i class="fas fa-clipboard-check"></i> <span>frequência</span>
+					</li>
+				</ul>
+			</nav>
+		</footer>
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 		<pre id="object"></pre>

@@ -1,0 +1,55 @@
+header nav {
+	display: flex;
+	flex-direction: column;
+	height: 100vh;
+	width: 18rem;
+	background-color: #005457;
+	position: fixed;
+	top: 0;
+	right: 0;
+	z-index: 1;
+}
+header div[class^='menu'] {
+	padding: 1rem;
+	cursor: pointer;
+}
+.menu-close {
+	margin-left: calc(100% - 3.35rem);
+	height: fit-content;
+}
+header nav i {
+	color: white;
+}
+#menu-items {
+	margin: 2rem 0 2rem 2rem;
+	width: 100%;
+}
+#menu-items i {
+	font-size: 1.125rem;
+	margin-right: 1rem;
+}
+#menu-items a,
+#menu-items a:active {
+	color: white;
+	text-decoration: none;
+}
+
+#menu-items li:not(:first-of-type) {
+	margin-top: 1.5rem;
+}
+#menu-items li {
+	color: white;
+	width: 100%;
+	padding: 0.5rem 0 0.5rem 0.5rem;
+	cursor: default;
+}
+#menu-items li:not(:first-of-type):hover {
+	background-color: #017374;
+}
+#menu-items li h3 {
+	font-size: 1.5rem;
+	font-weight: 400;
+	margin-bottom: 2rem;
+	color: white;
+	text-indent: 1rem;
+}
