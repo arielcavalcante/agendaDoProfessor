@@ -66,6 +66,7 @@ main section li:nth-of-type(even) {
 	font-size: 0.625rem;
 	font-weight: 700;
 	font-variant: small-caps;
+	text-indent: .125rem;
 }
 h2,
 h3,
@@ -87,20 +88,19 @@ footer nav ul {
 	display: flex;
 	justify-content: space-around;
 }
-footer nav li {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: space-between;
-	height: 3.25rem;
-	width: 4rem;
-	cursor: pointer;
-}
+
 i {
 	font-size: 1.75rem;
 	color: #019592;
 }
-footer nav li span {
+footer nav li a {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
 	font-size: 0.75rem;
 	color: #005457;
+	height: 3.25rem;
+	width: 4rem;
+	text-decoration: none;
 }

@@ -42,12 +42,13 @@ body {
 }
 .password-strength-meter span {
 	display: inline-block;
-	height: 0.5rem;
+	height: 0.25rem;
 	width: 32%;
 	background: rgba(33, 33, 33, 0.08);
 }
 
-/* Assign classes to the spans for proper coloring */
+/* Seta as classes <<weak, medium ou strong>> pra colorir as barrinhas. 
+Weak deve colorir a primeira barra, Medium as duas primeiras e Strong as 3 barras */
 .password-strength-meter span.weak {
 	background: #b00020;
 }
@@ -67,15 +68,6 @@ body {
 	font-size: 0.75rem;
 	line-height: 150%;
 	margin-top: 0.5rem;
-}
-input[id^='cadastro'] {
-	padding: 1rem;
-	border: 1px solid rgba(0, 0, 0, 0.12);
-	box-sizing: border-box;
-	border-radius: 0.25rem;
-}
-input[id^='cadastro']::placeholder {
-	color: rgba(0, 0, 0, 0.4);
 }
 
 input:not(:first-of-type) {

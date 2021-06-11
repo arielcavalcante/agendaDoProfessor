@@ -82,6 +82,70 @@ input[type='number'] {
 	box-shadow: none;
 	cursor: pointer;
 }
+.primary-button:hover {
+	background-color: rgba(0, 0, 0, 0.24);
+	font-weight: 700;
+}
+.primary-button:active {
+	background-color: rgba(0, 0, 0, 0.4);
+}
+
+/* Formulários e Entradas de Dados */
+.input.wrapper {
+	position: relative;
+	/* padding-top: .8125rem; */
+}
+.input.wrapper input {
+	padding: 1rem;
+	font-size: 1rem;
+	border: none;
+	border-bottom: 0.125rem solid rgba(1, 149, 146, 0.64);
+	border-radius: 0.25rem 0.25rem 0 0;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-webkit-appearance: none;
+}
+.input.wrapper input::placeholder {
+	color: rgba(0, 0, 0, 0.4);
+	font-size: 0.8rem;
+}
+*:focus {
+	outline-color: #00c4b4;
+}
+.input.wrapper label {
+	pointer-events: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	margin-top: 1rem;
+	margin-left: 1rem;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+}
+.input.wrapper input::placeholder {
+	color: transparent;
+}
+
+.input.wrapper input:focus:required:invalid {
+	border-bottom: 0.125rem solid #b00020;
+}
+.input.wrapper input:not(:required) + label::after {
+	content: '(opcional)';
+	font-size: 0.5rem;
+	position: absolute;
+	top: 0.125rem;
+	left: calc(100% + 0.25rem);
+}
+.input.wrapper input:focus + label,
+.input.wrapper input:not(:placeholder-shown) + label {
+	font-size: 0.8rem;
+	margin-top: 0.125rem;
+	color: #005457;
+}
+
+/* Media Queries & Responsividade pro Desktop */
 
 @media (min-width: 26rem) {
 	.form {

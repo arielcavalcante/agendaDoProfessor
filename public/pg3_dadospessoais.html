@@ -35,31 +35,39 @@
 						<h2>Dados Pessoais</h2>
 						<p>Insira seu CPF e Matrícula.</p>
 					</div>
-					<div class="input wrapper">
-						<input
-							type="number"
-							name="cpf"
-							id="cadastro-cpf"
-							aria-label="campo de texto de cpf"
-							placeholder="CPF"
-						/>
-						<input
-							type="number"
-							name="matricula"
-							id="cadastro-matricula"
-							aria-label="campo de texto de matrícula"
-							placeholder="Matrícula"
-						/>
-					</div>
+					<form>
+						<div class="input wrapper">
+							<input
+								type="number"
+								name="cpf"
+								id="cadastro-cpf"
+								aria-label="campo de texto de cpf"
+								placeholder="CPF"
+								required
+							/>
+							<label for="cadastro-cpf">cpf</label>
+						</div>
+						<div class="input wrapper">
+							<input
+								type="number"
+								name="matricula"
+								id="cadastro-matricula"
+								aria-label="campo de texto de matrícula"
+								placeholder="Matrícula"
+								required
+							/>
+							<label for="cadastro-matricula">matricula</label>
+						</div>
+					</form>
 
-					<!-- <button type="submit">continuar</button> -->
+					<!-- Troque o link pelo botão de submeter o formulário quando o db tiver linkado -->
+					<!-- <button type="submit" class="primary-button">continuar</button> -->
 					<a class="primary-button" href="pg4_contato.html">continuar</a>
 				</div>
 			</section>
 		</main>
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-		<pre id="object"></pre>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>

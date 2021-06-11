@@ -34,16 +34,21 @@
 						<h2>Login</h2>
 						<p>Faça login ou cadastre-se colocando seu email.</p>
 					</div>
-					<div class="input wrapper">
+					<form class="input wrapper">
 						<input
 							type="email"
 							name="email"
 							id="cadastro-email"
 							aria-label="campo de texto de email"
 							placeholder="seuemail@fortaleza.ce.gov.br"
+							required
 						/>
-					</div>
-					<!-- <button type="submit">login / cadastrar</button> -->
+						<label for="cadastro-email">email</label>
+					</form>
+					<!-- Troque o link pelo botão de submeter o formulário quando o db tiver linkado -->
+					<!-- <button type="submit" class="primary-button">
+						login / cadastrar
+					</button> -->
 
 					<a class="primary-button" href="pg2_login.html">
 						login / cadastrar
@@ -54,8 +59,6 @@
 				</button>
 			</section>
 		</main>
-
-		<pre id="object"></pre>
 
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 

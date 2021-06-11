@@ -35,41 +35,57 @@
 						<h2>Contato</h2>
 						<p>Insira seu Telefone e Endereço.</p>
 					</div>
-					<div class="input wrapper">
-						<input
-							type="tel"
-							name="tel"
-							id="cadastro-tel"
-							aria-label="campo de texto de telefone"
-							placeholder="Telefone"
-						/>
+					<form>
+						<div class="input wrapper">
+							<input
+								type="tel"
+								name="tel"
+								id="cadastro-tel"
+								aria-label="campo de texto de telefone"
+								placeholder="Telefone"
+								required
+							/>
+							<label for="cadastro-tel">celular</label>
+						</div>
 						<!-- 
-					TODO: Checar se está funcionando corretamente
-				 -->
-						<input
-							type="number"
-							name="cep"
-							id="cadastro-cep"
-							aria-label="campo de texto de cep"
-							placeholder="CEP"
-						/>
-						<input
-							type="number"
-							name="numero-logradouro"
-							id="cadastro-numero-logradouro"
-							aria-label="campo de texto de número da casa"
-							placeholder="Número"
-						/>
-						<input
-							type="text"
-							name="complemento"
-							id="cadastro-complemento"
-							aria-label="campo de texto de complemento"
-							placeholder="Complemento"
-						/>
-					</div>
+							TODO: Checar se o CEP tá funcionando corretamente
+						-->
+						<div class="input wrapper">
+							<input
+								type="number"
+								name="cep"
+								id="cadastro-cep"
+								aria-label="campo de texto de cep"
+								placeholder="CEP"
+								required
+							/>
+							<label for="cadastro-cep">cep</label>
+						</div>
+						<div class="input wrapper">
+							<input
+								type="number"
+								name="casa"
+								id="cadastro-casa"
+								aria-label="campo de texto de número da casa"
+								placeholder="Número"
+								required
+							/>
+							<label for="cadastro-casa">casa</label>
+						</div>
+						<div class="input wrapper">
+							<input
+								type="text"
+								name="complemento"
+								id="cadastro-complemento"
+								aria-label="campo de texto de complemento"
+								placeholder="Complemento"
+							/>
+							<label for="cadastro-complemento">complemento</label>
+						</div>
+					</form>
 
-					<!-- <button type="submit">continuar</button> -->
+					<!-- Troque o link pelo botão de submeter o formulário quando o db tiver linkado -->
+					<!-- <button type="submit" class="primary-button">continuar</button> -->
 					<a class="primary-button" href="home_logada.html"
 						>finalizar cadastro</a
 					>
@@ -78,7 +94,6 @@
 		</main>
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
-		<pre id="object"></pre>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>
