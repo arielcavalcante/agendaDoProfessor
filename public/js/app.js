@@ -30,3 +30,14 @@
 	// 	let html = '';
 	// });
 })();
+
+const openMenu = document.querySelector('.menu-button');
+const closeMenu = document.querySelector('.menu-close');
+const menu = document.querySelector('header nav');
+// Menu
+function activateMenu() {
+	if (menu.style.display === 'none') menu.style.display = 'flex';
+	else menu.style.display = 'none';
+}
+openMenu.addEventListener('click', activateMenu);
+closeMenu.addEventListener('click', activateMenu);

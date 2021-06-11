@@ -27,38 +27,58 @@
 				<a href="/"> Canal do <strong>Professor</strong></a>
 			</h1>
 		</header>
+
 		<main>
 			<section class="form">
 				<div class="login">
 					<div class="text wrapper">
-						<h2>Login</h2>
-						<p>Faça login ou cadastre-se colocando seu email.</p>
+						<h2>Contato</h2>
+						<p>Insira seu Telefone e Endereço.</p>
 					</div>
 					<div class="input wrapper">
 						<input
-							type="email"
-							name="email"
-							id="cadastro-email"
-							aria-label="campo de texto de email"
-							placeholder="seuemail@fortaleza.ce.gov.br"
+							type="tel"
+							name="tel"
+							id="cadastro-tel"
+							aria-label="campo de texto de telefone"
+							placeholder="Telefone"
+						/>
+						<!-- 
+					TODO: Checar se está funcionando corretamente
+				 -->
+						<input
+							type="number"
+							name="cep"
+							id="cadastro-cep"
+							aria-label="campo de texto de cep"
+							placeholder="CEP"
+						/>
+						<input
+							type="number"
+							name="numero-logradouro"
+							id="cadastro-numero-logradouro"
+							aria-label="campo de texto de número da casa"
+							placeholder="Número"
+						/>
+						<input
+							type="text"
+							name="complemento"
+							id="cadastro-complemento"
+							aria-label="campo de texto de complemento"
+							placeholder="Complemento"
 						/>
 					</div>
-					<!-- <button type="submit">login / cadastrar</button> -->
 
-					<a class="primary-button" href="pg2_login.html">
-						login / cadastrar
-					</a>
+					<!-- <button type="submit">continuar</button> -->
+					<a class="primary-button" href="home_logada.html"
+						>finalizar cadastro</a
+					>
 				</div>
-				<button id="google-btn" class="primary-button" type="submit">
-					entrar com o google
-				</button>
 			</section>
 		</main>
-
-		<pre id="object"></pre>
-
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
+		<pre id="object"></pre>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
 		<script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-database.js"></script>

@@ -10,6 +10,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Agenda do Professor</title>
 		<link rel="stylesheet" href="css/styles.css" />
+		<link rel="stylesheet" href="css/login.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -23,15 +24,41 @@
 	<body>
 		<header>
 			<h1>
-				<a href="/home_logada.html"> Canal do <strong>Professor</strong></a>
+				<a href="/"> Canal do <strong>Professor</strong></a>
 			</h1>
 		</header>
-		<main class="page404">
-			<h3>Página não encontrada</h3>
-			<p>Erro 404</p>
+		<main>
+			<section class="form">
+				<div class="login">
+					<div class="text wrapper">
+						<h2>Cadastrar</h2>
+						<p>Crie sua senha e memorize-a.</p>
+						<p class="text--tiny">
+							(Mas fique tranquilo, você poderá mudar sua senha a qualquer
+							momento se a perder).
+						</p>
+					</div>
+					<div class="input wrapper">
+						<input
+							type="password"
+							name="password"
+							id="cadastro-password"
+							aria-label="campo de texto de senha"
+							placeholder="Maiúsculas, minúsculas e números"
+						/>
+						<div class="password-strength-meter">
+							<span></span>
+							<span></span>
+							<span></span>
+						</div>
+					</div>
 
-			<a href="/home_logada.html">Voltar pra Home</a>
+					<!-- <button type="submit">continuar</button> -->
+					<a class="primary-button" href="pg3_dadospessoais.html">continuar</a>
+				</div>
+			</section>
 		</main>
+
 		<!-- ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ -->
 
 		<pre id="object"></pre>
