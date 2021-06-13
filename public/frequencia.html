@@ -12,6 +12,7 @@
 		<link rel="stylesheet" href="css/styles.css" />
 		<link rel="stylesheet" href="css/internal.css" />
 		<link rel="stylesheet" href="css/menu.css" />
+		<link rel="stylesheet" href="css/frequencia.css" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
@@ -69,112 +70,106 @@
 		<main>
 			<section class="content-header">
 				<h2>Frequência <strong>Diária</strong></h2>
-				<p class="subtitle" id="dia-hora">segunda, 7 jun, 9:19</p>
+				<p class="subtitle" id="dia-hora">Segunda, 7 jun, 9:19</p>
 			</section>
-			<section class="listas turmas">
-				<h3>Turmas</h3>
-				<div>
-					<section class="turno manha">
-						<h4>Manhã</h4>
-						<ul>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-						</ul>
-					</section>
-					<section class="turno tarde">
-						<h4>Tarde</h4>
-						<ul>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-							<li class="turma">
-								<ul>
-									<li>
-										<span class="serie">1</span>º ano
-										<span class="turma">A</span>
-									</li>
-									<li><span class="colegio">EEFM Adauto Leite</span></li>
-								</ul>
-							</li>
-						</ul>
-					</section>
+			<section class="turma-seletor">
+				<div class="materia-horario">
+					<select>
+						<option value="portugues" selected>Português</option>
+					</select>
+					<span>•</span>
+					<select>
+						<option value="seg 3 horario" selected>Seg 3º horário</option>
+					</select>
 				</div>
+
+				<!-- Deve selecionar, por padrão, a turma que o professor está matriculado ((naquele horário e dia))
+
+				EX: Se agora são 10h da manhã de terça feira e às 10h da terça eu dou aula de geografia na Escola de Artes Sensuais, assim q eu abrir a página de frequencia essa será a opção mostrada por default -->
+
+				<div class="serie-turma-turno-grau">
+					<div class="serie-turma">
+						<select class="serie">
+							<option value="1" selected>1º</option>
+							<option value="2">2º</option>
+							<option value="3">3º</option>
+							<option value="4">4º</option>
+							<option value="5">5º</option>
+							<option value="6">6º</option>
+							<option value="7">7º</option>
+							<option value="8">8º</option>
+							<option value="9">9º</option>
+						</select>
+						<select class="turma">
+							<option value="a" selected>A</option>
+							<option value="b">B</option>
+							<option value="c">C</option>
+							<option value="d">D</option>
+							<option value="e">E</option>
+						</select>
+						<span>•</span>
+					</div>
+					<div class="turno-grau">
+						<select class="turno">
+							<option value="manha" selected>Manhã</option>
+							<option value="manha">Tarde</option>
+						</select>
+						<span>•</span>
+						<select class="grau">
+							<option value="fundamental">Ens. Fundamental</option>
+							<option value="medio" selected>Ens. Médio</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<section class="legenda">
+				<div>
+					<i class="far fa-square"></i>
+					<span>Falta</span>
+				</div>
+				<div>
+					<i class="fas fa-check"></i>
+					<span>Presença</span>
+				</div>
+			</section>
+			<section class="lista-frequencia">
+				<ul>
+					<li>
+						<span>Nº</span>
+						<label for="aluno1">Aluno</label>
+						<input
+							type="checkbox"
+							name="selecionar-todos"
+							id="selecionar-todos--frequencia-diaria"
+							onclick="toggle(this)"
+						/>
+						<i></i>
+					</li>
+					<li>
+						<span>1</span>
+						<label for="aluno1">allana camily melo dos santos</label>
+						<input type="checkbox" name="frequencia" id="aluno1" />
+						<i></i>
+					</li>
+					<li>
+						<span>2</span>
+						<label for="aluno2">amanda vitória de lima</label>
+						<input type="checkbox" name="frequencia" id="aluno2" />
+						<i></i>
+					</li>
+					<li>
+						<span>3</span>
+						<label for="aluno3">ananda alexandre de araújo silva</label>
+						<input type="checkbox" name="frequencia" id="aluno3" />
+						<i></i>
+					</li>
+					<li>
+						<span>4</span>
+						<label for="aluno4">alexandre mourão gomes</label>
+						<input type="checkbox" name="frequencia" id="aluno4" />
+						<i></i>
+					</li>
+				</ul>
 			</section>
 		</main>
 

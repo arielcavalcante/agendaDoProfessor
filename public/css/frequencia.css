@@ -1,0 +1,61 @@
+.turma-seletor {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 2.5rem;
+	margin-left: -0.4125rem;
+	padding-bottom: 2rem;
+	border-bottom: solid 0.0625rem rgba(0, 0, 0, 0.12);
+}
+.legenda div:first-of-type i {
+	color: rgba(0, 0, 0, 0.12);
+}
+.legenda div:nth-of-type(2) i {
+	color: rgba(0, 0, 0, 0.6);
+}
+.turma-seletor span {
+	margin: 0 0.5rem;
+	cursor: default;
+}
+.materia-horario select {
+	font-size: 1.25rem;
+	color: #017374;
+}
+.turma-seletor .turno-grau select.grau {
+	width: 5.5rem;
+	overflow: hidden;
+	text-overflow: ellipsis !important;
+	white-space: nowrap;
+}
+.turno-grau {
+	display: inline-block;
+}
+.serie-turma {
+	display: inline-block;
+}
+.lista-frequencia ul li {
+	max-width: 100%;
+	display: flex;
+	align-items: center;
+	position: relative;
+	margin-bottom: 2rem;
+}
+.lista-frequencia ul li:first-of-type {
+	font-weight: 700;
+	padding-bottom: 0.5rem;
+	/* border-bottom: solid 0.0625rem rgba(0, 0, 0, 0.12); */
+}
+.lista-frequencia ul li label {
+	text-transform: capitalize;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	justify-self: flex-start;
+	max-width: 18rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+.lista-frequencia ul li input + i {
+	position: absolute;
+	right: 0.25rem;
+}

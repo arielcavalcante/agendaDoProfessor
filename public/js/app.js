@@ -41,3 +41,11 @@ function activateMenu() {
 }
 openMenu.addEventListener('click', activateMenu);
 closeMenu.addEventListener('click', activateMenu);
+
+function toggle(origemDoClick) {
+	const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+	for (let i = 0; i < checkboxes.length; i++) {
+		if (checkboxes[i] !== origemDoClick)
+			checkboxes[i].checked = origemDoClick.checked;
+	}
+}

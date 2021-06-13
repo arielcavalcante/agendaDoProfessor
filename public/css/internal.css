@@ -36,7 +36,6 @@ header {
 }
 .listas.turmas {
 	margin-top: 2.5rem;
-	margin-bottom: 3.5rem;
 }
 .listas.turmas div {
 	display: flex;
@@ -61,18 +60,6 @@ main section ul {
 }
 main section li:nth-of-type(even) {
 	margin-bottom: 1.5rem;
-}
-.subtitle {
-	font-size: 0.625rem;
-	font-weight: 700;
-	font-variant: small-caps;
-	text-indent: .125rem;
-}
-h2,
-h3,
-h4,
-.subtitle {
-	color: rgba(0, 0, 0, 0.6);
 }
 
 /* FOOTER */
