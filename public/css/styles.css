@@ -13,7 +13,7 @@
 	padding: 0;
 }
 
-/* Header component */
+/* Estilos do Header */
 header {
 	width: 100vw;
 	height: 3.5rem;
@@ -44,9 +44,8 @@ h1 > a {
 /* General styles */
 main {
 	margin-top: 3.5rem;
-	width: 100%;
 }
-main > section:last-of-type {
+main > *:last-of-type {
 	margin-bottom: 5rem;
 }
 .wrapper {
@@ -54,62 +53,45 @@ main > section:last-of-type {
 	flex-direction: column;
 	justify-content: space-between;
 }
-.subtitle {
-	font-size: 0.625rem;
-	font-weight: 700;
-	text-transform: uppercase;
-	font-variant: small-caps;
-	text-indent: 0.125rem;
-	letter-spacing: 0.1rem;
-}
-h2,
-h3,
-h4,
-h5,
-.subtitle {
-	color: rgba(0, 0, 0, 0.6);
-	cursor: default;
-}
-h2 {
-	font-weight: 400;
-	font-size: 2.125rem;
-	color: rgba(0, 0, 0, 0.87);
+*:focus {
+	outline-color: #00c4b4;
 }
 
-/* Chrome, Safari, Edge, Opera */
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-	-webkit-appearance: none;
-	margin: 0;
-}
-
-/* Firefox */
-input[type='number'] {
-	-moz-appearance: textfield;
-}
-
+/* Botões e Âncoras*/
 .form button,
 .primary-button {
-	font-size: 0.875rem;
+	text-transform: lowercase;
 	font-variant: small-caps;
+	font-size: 0.875rem;
+	letter-spacing: 0.1rem;
 	color: rgba(0, 0, 0, 0.87);
 	width: 100%;
 	background: rgba(0, 0, 0, 0.12);
 	padding: 1rem;
 	border-radius: 0.25rem;
 	border: none;
-	box-shadow: none;
+	box-shadow: 0 0.25rem 0 rgba(0, 0, 0, 0.15);
 	cursor: pointer;
 }
 .primary-button:hover {
-	background-color: rgba(0, 0, 0, 0.24);
+	background-color: rgba(0, 0, 0, 0.2);
 	font-weight: 700;
+	box-shadow: 0 0.35rem 0 rgba(0, 0, 0, 0.25);
 }
 .primary-button:active {
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0.25);
+	box-shadow: 0 0.125rem 0 rgba(0, 0, 0, 0.3);
 }
 
-/* Formulários e Entradas de Dados */
+/* Formulários e Entradas de dados */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+input[type='number'] {
+	-moz-appearance: textfield;
+}
 .input.wrapper {
 	position: relative;
 }
@@ -128,9 +110,7 @@ input[type='number'] {
 	color: rgba(0, 0, 0, 0.4);
 	font-size: 0.8rem;
 }
-*:focus {
-	outline-color: #00c4b4;
-}
+
 .input.wrapper label {
 	color: rgba(0, 0, 0, 0.38);
 	pointer-events: none;
@@ -164,6 +144,41 @@ input[type='number'] {
 	color: #005457;
 }
 
+input[type='checkbox'] {
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	-o-appearance: none;
+	width: 1.5rem;
+	height: 1.5rem;
+	margin-left: auto;
+	border: solid 0.125rem rgba(0, 0, 0, 0.12);
+	border-radius: 0.25rem;
+}
+input[type='checkbox']:disabled {
+	background-color: rgba(0, 0, 0, 0.06);
+}
+input[type='checkbox']:checked + i::before {
+	font-size: 1rem;
+	font-family: 'Font Awesome 5 Free';
+	font-weight: 900;
+	width: 1rem;
+	height: 1rem;
+	color: rgba(0, 0, 0, 0.6);
+	user-select: none;
+	content: '\f00c';
+	display: block;
+	position: absolute;
+	bottom: -0.5rem;
+	right: 0.125rem;
+	z-index: -1;
+}
+input[type='checkbox']:not(:disabled):hover,
+li label:hover {
+	cursor: pointer;
+	border-color: #00c4b4;
+}
+
 select {
 	cursor: pointer;
 	font-size: 0.875rem;
@@ -178,6 +193,29 @@ select {
 }
 select option[selected] {
 	background-color: rgba(0, 0, 0, 0.06);
+}
+
+/* Textos e Tipografias */
+h2,
+h3,
+h4,
+h5,
+.subtitle {
+	color: rgba(0, 0, 0, 0.6);
+	cursor: default;
+}
+h2 {
+	font-weight: 400;
+	font-size: 2.125rem;
+	color: rgba(0, 0, 0, 0.87);
+}
+.subtitle {
+	font-size: 0.625rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-variant: small-caps;
+	text-indent: 0.125rem;
+	letter-spacing: 0.1rem;
 }
 .legenda {
 	display: flex;
@@ -203,46 +241,15 @@ select option[selected] {
 	font-size: 0.875rem;
 }
 
-input[type='checkbox'] {
-	appearance: none;
-	-webkit-appearance: none;
-	-moz-appearance: none;
-	-o-appearance: none;
-	width: 1.5rem;
-	height: 1.5rem;
-	margin-left: auto;
-	border: solid 0.125rem rgba(0, 0, 0, 0.12);
-	border-radius: 0.25rem;
-}
-input[type='checkbox']:disabled {
-	background-color: rgba(0, 0, 0, 0.06);
-}
-
-input[type='checkbox']:checked + i::before {
-	font-size: 1rem;
-	font-family: 'Font Awesome 5 Free';
-	font-weight: 900;
-	width: 1rem;
-	height: 1rem;
-	color: rgba(0, 0, 0, 0.6);
-	user-select: none;
-	content: '\f00c';
-	display: block;
-	position: absolute;
-	bottom: -0.5rem;
-	right: 0.125rem;
-	z-index: -1;
-}
-input[type='checkbox']:not(:disabled):hover,
-li label:hover {
-	cursor: pointer;
-	border-color: #00c4b4;
-}
-
 /* Media Queries & Responsividade pro Desktop */
 
 @media (min-width: 26rem) {
 	.form {
 		width: 23rem;
+	}
+	form .primary-button {
+		display: block;
+		width: 50%;
+		margin-left: auto;
 	}
 }

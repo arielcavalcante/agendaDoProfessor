@@ -48,6 +48,9 @@ header {
 .listas-turmas section + section {
 	margin-left: 2rem;
 }
+.turma a {
+	text-decoration: none;
+}
 ul {
 	list-style: none;
 }
@@ -90,4 +93,7 @@ footer nav li a {
 	height: 3.25rem;
 	width: 4rem;
 	text-decoration: none;
+}
+
+@media (min-width: 26rem) {
 }

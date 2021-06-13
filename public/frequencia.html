@@ -67,25 +67,24 @@
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main id="pag_frequencia-diaria">
 			<section class="content-header">
 				<h2>Frequência <strong>Diária</strong></h2>
 				<p class="subtitle" id="dia-hora">Segunda, 7 jun, 9:19</p>
 			</section>
+			<!-- Deve selecionar, por padrão, a turma que o professor está matriculado ((naquele horário e dia))
+				
+				EX: Se agora são 10h da manhã de terça feira e às 10h da terça eu dou aula de geografia na Escola de Artes Sensuais, assim q eu abrir a página de frequencia essa será a opção mostrada por default -->
 			<section class="turma-seletor">
 				<div class="materia-horario">
-					<select>
+					<select class="materia">
 						<option value="portugues" selected>Português</option>
 					</select>
 					<span>•</span>
-					<select>
+					<select class="horario">
 						<option value="seg 3 horario" selected>Seg 3º horário</option>
 					</select>
 				</div>
-
-				<!-- Deve selecionar, por padrão, a turma que o professor está matriculado ((naquele horário e dia))
-
-				EX: Se agora são 10h da manhã de terça feira e às 10h da terça eu dou aula de geografia na Escola de Artes Sensuais, assim q eu abrir a página de frequencia essa será a opção mostrada por default -->
 
 				<div class="serie-turma-turno-grau">
 					<div class="serie-turma">
@@ -107,14 +106,12 @@
 							<option value="d">D</option>
 							<option value="e">E</option>
 						</select>
-						<span>•</span>
 					</div>
 					<div class="turno-grau">
 						<select class="turno">
 							<option value="manha" selected>Manhã</option>
 							<option value="manha">Tarde</option>
 						</select>
-						<span>•</span>
 						<select class="grau">
 							<option value="fundamental">Ens. Fundamental</option>
 							<option value="medio" selected>Ens. Médio</option>
@@ -124,7 +121,7 @@
 			</section>
 			<section class="legenda">
 				<div>
-					<i class="far fa-square"></i>
+					<span></span>
 					<span>Falta</span>
 				</div>
 				<div>
@@ -132,7 +129,8 @@
 					<span>Presença</span>
 				</div>
 			</section>
-			<section class="lista-frequencia">
+
+			<form class="lista-frequencia" action="">
 				<ul>
 					<li>
 						<span>Nº</span>
@@ -171,7 +169,8 @@
 						<i></i>
 					</li>
 				</ul>
-			</section>
+				<button type="submit" class="primary-button">Salvar Frequência</button>
+			</form>
 		</main>
 
 		<footer>

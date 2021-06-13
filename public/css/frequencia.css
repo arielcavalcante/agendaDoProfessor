@@ -7,8 +7,18 @@
 	padding-bottom: 2rem;
 	border-bottom: solid 0.0625rem rgba(0, 0, 0, 0.12);
 }
-.legenda div:first-of-type i {
-	color: rgba(0, 0, 0, 0.12);
+.legenda div:first-of-type span:first-of-type::before {
+	content: '';
+	display: inline-block;
+	border: solid 0.125rem rgba(0, 0, 0, 0.12);
+	border-radius: 0.125rem;
+	width: 1rem;
+	height: 1rem;
+	margin-bottom: -0.35rem;
+}
+.legenda div:first-of-type span:first-of-type::after {
+	content: ':';
+	display: inline-block;
 }
 .legenda div:nth-of-type(2) i {
 	color: rgba(0, 0, 0, 0.6);
@@ -41,7 +51,8 @@
 	display: flex;
 	align-items: center;
 	position: relative;
-	margin-bottom: 2rem;
+	margin-bottom: 1.5rem;
+	padding: 0 0.5rem;
 }
 .lista-frequencia ul li:first-of-type {
 	font-weight: 700;
@@ -50,15 +61,40 @@
 }
 .lista-frequencia ul li label {
 	text-transform: capitalize;
+	text-overflow: ellipsis;
+	overflow: hidden;
+	white-space: nowrap;
+	max-width: 18rem;
 	margin-left: 1rem;
 	margin-right: 1rem;
+	padding: 1rem 0;
 	justify-self: flex-start;
-	max-width: 18rem;
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
 }
 .lista-frequencia ul li input + i {
 	position: absolute;
-	right: 0.25rem;
+	right: 0.675rem;
+}
+
+@media (min-width: 26rem) {
+	#pag_frequencia-diaria {
+		width: 80%;
+	}
+	.turma-seletor div {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		width: 50%;
+		height: 100%;
+	}
+	.turma-seletor .turno-grau select.materia,
+	.turma-seletor .turno-grau select.grau {
+		width: auto;
+	}
+	.lista-frequencia li:not(:first-of-type):hover {
+		background-color: rgba(0, 0, 0, 0.03);
+	}
+	.lista-frequencia ul li label {
+		width: 100%;
+		max-width: unset;
+	}
 }
