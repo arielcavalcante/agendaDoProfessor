@@ -33,6 +33,9 @@
 .serie-turma {
 	display: inline-block;
 }
+.lista-frequencia {
+	margin-top: 2rem;
+}
 .lista-frequencia ul li {
 	max-width: 100%;
 	display: flex;

@@ -34,31 +34,31 @@ header {
 	display: flex;
 	flex-direction: column;
 }
-.listas.turmas {
+.listas-turmas {
 	margin-top: 2.5rem;
 }
-.listas.turmas div {
+.listas-turmas div {
 	display: flex;
 }
-.listas.turmas section {
+.listas-turmas section {
 	margin-top: 2rem;
 	margin-left: 1rem;
 	position: relative;
 }
-.listas.turmas section + section {
-	margin-left: 20%;
+.listas-turmas section + section {
+	margin-left: 2rem;
 }
 ul {
 	list-style: none;
 }
-main section ul {
+main .listas-turmas ul {
 	margin-top: 1.5rem;
 }
 .colegio {
 	font-size: 0.75rem;
 	color: rgba(0, 0, 0, 0.38);
 }
-main section li:nth-of-type(even) {
+main .listas-turmas li:nth-of-type(even) {
 	margin-bottom: 1.5rem;
 }
 

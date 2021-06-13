@@ -1,5 +1,5 @@
 (function () {
-	var firebaseConfig = {
+	let firebaseConfig = {
 		apiKey: 'AIzaSyB7VIwHfuAkj3ldrqVdpOTeiPxiEB_I9Hc',
 		authDomain: 'agenda-do-professor-170ca.firebaseapp.com',
 		databaseURL:
@@ -42,10 +42,22 @@ function activateMenu() {
 openMenu.addEventListener('click', activateMenu);
 closeMenu.addEventListener('click', activateMenu);
 
-function toggle(origemDoClick) {
-	const checkboxes = document.querySelectorAll('input[type="checkbox"]');
-	for (let i = 0; i < checkboxes.length; i++) {
-		if (checkboxes[i] !== origemDoClick)
-			checkboxes[i].checked = origemDoClick.checked;
+/* Seleciona e desseleciona todos os checkboxes da lista e mostra o status de seleção no checkbox 'mãe' */
+function checkToggle(event) {
+	let changed = event.target,
+		selectAll = document.getElementById('frequencia-diaria'),
+		checkboxes = [
+			...this.querySelectorAll('.lista-frequencia input[type=checkbox]'),
+		].filter(check => check !== selectAll);
+
+	if (changed === selectAll) {
+		checkboxes.forEach(check => (check.checked = selectAll.checked));
+	} else {
+		let allChecked =
+			checkboxes.filter(check => check.checked).length === checkboxes.length;
+		selectAll.checked = allChecked;
 	}
 }
+
+let checkboxListElement = document.querySelector('.lista-frequencia ul');
+checkboxListElement.addEventListener('change', checkToggle);
